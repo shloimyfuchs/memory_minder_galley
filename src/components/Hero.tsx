@@ -11,7 +11,7 @@ export const Hero = () => {
             Transform Your Learning Experience
           </span>
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Remember Everything You Learn Online
+            Become Smarter. Retain Knowledge
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Your AI-powered learning companion that automatically summarizes and retains key insights from videos, podcasts, and online content.
