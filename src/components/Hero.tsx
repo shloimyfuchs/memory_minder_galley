@@ -51,9 +51,14 @@ export const Hero = () => {
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-blue-400">Become Smarter. Retain Knowledge.</span>
           </h1>
           <div className="max-w-2xl mx-auto">
-            <p className="text-xl md:text-2xl font-medium text-blue-100 mb-8 leading-relaxed animate-fadeIn">
-              We're working on something amazing to enhance your studying, researching, ideation, and thought process. Sign Up to stay updated when it gets released.
-            </p>
+            <div className="space-y-4 animate-fadeIn">
+              <p className="text-xl md:text-2xl font-medium text-blue-100 leading-relaxed">
+                We're working on something amazing to enhance your studying, researching, ideation, and thought process.
+              </p>
+              <p className="text-xl md:text-2xl font-clash text-blue-200">
+                Sign Up to stay updated when it gets released.
+              </p>
+            </div>
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
               <Input
                 type="email"
