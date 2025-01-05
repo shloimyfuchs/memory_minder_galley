@@ -1,4 +1,4 @@
-import { ArrowRight, CornerDownLeft } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useState } from "react";
@@ -62,25 +62,15 @@ export const Hero = () => {
             </p>
             
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-              <div className="relative w-full">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-white/10 border-white/20 text-white placeholder:text-slate-400 rounded-full pr-12"
-                  required
-                  disabled={isSubmitting}
-                />
-                <Button 
-                  type="submit"
-                  size="icon"
-                  disabled={isSubmitting}
-                  className="absolute right-1 top-1/2 -translate-y-1/2 bg-transparent hover:bg-white/10 h-8 w-8"
-                >
-                  <CornerDownLeft className="h-4 w-4" />
-                </Button>
-              </div>
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full bg-white/10 border-white/20 text-white placeholder:text-slate-400 rounded-full"
+                required
+                disabled={isSubmitting}
+              />
               <Button 
                 type="submit" 
                 size="lg" 
