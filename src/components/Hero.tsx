@@ -40,12 +40,11 @@ export const Hero = () => {
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-white/10 border-white/20 text-white placeholder:text-slate-400"
+              className="w-full bg-white/10 border-white/20 text-white placeholder:text-slate-400 rounded-full"
               required
             />
-            <Button type="submit" size="lg" className="group w-full sm:w-auto whitespace-nowrap bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-300">
-              Get Updates
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            <Button type="submit" size="lg" className="group w-full sm:w-auto whitespace-nowrap bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 rounded-full aspect-square p-0 sm:w-12 h-12 flex items-center justify-center">
+              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </form>
         </div>
