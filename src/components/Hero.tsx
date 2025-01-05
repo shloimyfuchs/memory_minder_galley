@@ -47,9 +47,8 @@ export const Hero = () => {
           <span className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary-foreground text-sm font-medium mb-4 backdrop-blur-sm border border-primary/20">
             Transform Your Learning Experience
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight flex flex-col gap-4 font-clash text-white">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-blue-400">Become Smarter.</span>
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-blue-400">Retain Knowledge.</span>
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight font-clash text-white">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-blue-400">Become Smarter. Retain Knowledge.</span>
           </h1>
           <div className="max-w-2xl mx-auto">
             <p className="text-xl md:text-2xl font-medium text-blue-100 mb-8 leading-relaxed animate-fadeIn">
