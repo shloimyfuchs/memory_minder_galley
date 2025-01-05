@@ -44,9 +44,14 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary-foreground text-sm font-medium mb-8 backdrop-blur-sm border border-primary/20">
-            Transform Your Learning Experience
-          </span>
+          <div className="space-y-4 mb-12">
+            <span className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary-foreground text-sm font-medium backdrop-blur-sm border border-primary/20">
+              Transform Your Learning Experience
+            </span>
+            <p className="text-xl font-clash text-blue-200">
+              Sign Up to stay updated when it gets released.
+            </p>
+          </div>
           
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight font-clash mb-12">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-blue-400">
@@ -59,31 +64,25 @@ export const Hero = () => {
               We're working on something amazing to enhance your studying, researching, ideation, and thought process.
             </p>
             
-            <div className="space-y-8">
-              <p className="text-xl md:text-2xl font-clash text-blue-200">
-                Sign Up to stay updated when it gets released.
-              </p>
-              
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-white/10 border-white/20 text-white placeholder:text-slate-400 rounded-full"
-                  required
-                  disabled={isSubmitting}
-                />
-                <Button 
-                  type="submit" 
-                  size="lg" 
-                  disabled={isSubmitting}
-                  className="group w-full sm:w-auto whitespace-nowrap bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 rounded-full aspect-square p-0 sm:w-12 h-12 flex items-center justify-center"
-                >
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-              </form>
-            </div>
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full bg-white/10 border-white/20 text-white placeholder:text-slate-400 rounded-full"
+                required
+                disabled={isSubmitting}
+              />
+              <Button 
+                type="submit" 
+                size="lg" 
+                disabled={isSubmitting}
+                className="group w-full sm:w-auto whitespace-nowrap bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 rounded-full aspect-square p-0 sm:w-12 h-12 flex items-center justify-center"
+              >
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </form>
           </div>
         </div>
       </div>
