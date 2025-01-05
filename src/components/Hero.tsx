@@ -54,25 +54,30 @@ export const Hero = () => {
           <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
             Your AI-powered learning companion that automatically summarizes and retains key insights from videos, podcasts, and online content.
           </p>
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-white/10 border-white/20 text-white placeholder:text-slate-400 rounded-full"
-              required
-              disabled={isSubmitting}
-            />
-            <Button 
-              type="submit" 
-              size="lg" 
-              disabled={isSubmitting}
-              className="group w-full sm:w-auto whitespace-nowrap bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 rounded-full aspect-square p-0 sm:w-12 h-12 flex items-center justify-center"
-            >
-              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-          </form>
+          <div className="max-w-2xl mx-auto">
+            <p className="text-slate-300 mb-6">
+              We're working on something amazing to enhance your studying, researching, ideation, and thought process. Sign Up to stay updated when it gets released.
+            </p>
+            <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="w-full bg-white/10 border-white/20 text-white placeholder:text-slate-400 rounded-full"
+                required
+                disabled={isSubmitting}
+              />
+              <Button 
+                type="submit" 
+                size="lg" 
+                disabled={isSubmitting}
+                className="group w-full sm:w-auto whitespace-nowrap bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 rounded-full aspect-square p-0 sm:w-12 h-12 flex items-center justify-center"
+              >
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
