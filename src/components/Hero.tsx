@@ -61,10 +61,6 @@ export const Hero = () => {
               We're working on something amazing to enhance your studying, researching, ideation, and thought process.
             </p>
             
-            <p className="text-xl font-clash text-blue-200">
-              Sign Up to stay updated when it gets released.
-            </p>
-            
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
               <Input
                 type="email"
@@ -84,6 +80,10 @@ export const Hero = () => {
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </form>
+
+            <p className="text-xl font-clash text-blue-200">
+              Sign Up to stay updated when it gets released.
+            </p>
           </div>
         </div>
       </div>
