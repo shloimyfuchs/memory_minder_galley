@@ -46,7 +46,7 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-4 mb-12">
             <span className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary-foreground text-sm font-medium backdrop-blur-sm border border-primary/20">
-              Transform Your Learning Experience
+              Coming Soon
             </span>
           </div>
           
