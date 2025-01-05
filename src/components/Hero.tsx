@@ -51,9 +51,6 @@ export const Hero = () => {
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-blue-400">Become Smarter.</span>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-blue-400">Retain Knowledge.</span>
           </h1>
-          <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Your AI-powered learning companion that automatically summarizes and retains key insights from videos, podcasts, and online content.
-          </p>
           <div className="max-w-2xl mx-auto">
             <p className="text-slate-300 mb-6">
               We're working on something amazing to enhance your studying, researching, ideation, and thought process. Sign Up to stay updated when it gets released.
