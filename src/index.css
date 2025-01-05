@@ -39,3 +39,7 @@
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
+
+.font-clash {
+  font-family: 'Clash Display', sans-serif;
+}

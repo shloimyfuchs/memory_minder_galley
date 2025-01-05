@@ -27,7 +27,7 @@ export const Hero = () => {
           <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
             Transform Your Learning Experience
           </span>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight flex flex-col gap-2">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight flex flex-col gap-2 font-clash">
             <span>Become Smarter.</span>
             <span>Retain Knowledge.</span>
           </h1>
