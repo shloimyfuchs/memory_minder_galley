@@ -62,23 +62,25 @@ export const Hero = () => {
             </p>
             
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-              <Input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full bg-white/10 border-white/20 text-white placeholder:text-slate-400 rounded-full"
-                required
-                disabled={isSubmitting}
-              />
-              <Button 
-                type="submit" 
-                size="lg" 
-                disabled={isSubmitting}
-                className="group w-full sm:w-auto whitespace-nowrap bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 rounded-full aspect-square p-0 sm:w-12 h-12 flex items-center justify-center"
-              >
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <div className="relative w-full">
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full bg-white/10 border-white/20 text-white placeholder:text-slate-400 rounded-full pr-14"
+                  required
+                  disabled={isSubmitting}
+                />
+                <Button 
+                  type="submit" 
+                  size="icon"
+                  disabled={isSubmitting}
+                  className="group absolute right-1 top-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 rounded-full aspect-square p-0 w-10 h-10 flex items-center justify-center"
+                >
+                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </div>
             </form>
 
             <p className="text-xl font-clash text-blue-200">
