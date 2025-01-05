@@ -52,7 +52,7 @@ export const Hero = () => {
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-blue-400">Retain Knowledge.</span>
           </h1>
           <div className="max-w-2xl mx-auto">
-            <p className="text-slate-300 mb-6">
+            <p className="text-xl md:text-2xl font-medium text-blue-100 mb-8 leading-relaxed animate-fadeIn">
               We're working on something amazing to enhance your studying, researching, ideation, and thought process. Sign Up to stay updated when it gets released.
             </p>
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
