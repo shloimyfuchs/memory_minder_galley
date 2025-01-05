@@ -1,4 +1,4 @@
-import { ArrowRight, Enter } from "lucide-react";
+import { ArrowRight, CornerDownLeft } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useState } from "react";
@@ -78,7 +78,7 @@ export const Hero = () => {
                   disabled={isSubmitting}
                   className="absolute right-1 top-1/2 -translate-y-1/2 bg-transparent hover:bg-white/10 h-8 w-8"
                 >
-                  <Enter className="h-4 w-4" />
+                  <CornerDownLeft className="h-4 w-4" />
                 </Button>
               </div>
               <Button 
