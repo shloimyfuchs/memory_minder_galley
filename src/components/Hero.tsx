@@ -48,9 +48,6 @@ export const Hero = () => {
             <span className="inline-block px-6 py-2 rounded-full bg-primary/10 text-primary-foreground text-sm font-medium backdrop-blur-sm border border-primary/20">
               Transform Your Learning Experience
             </span>
-            <p className="text-xl font-clash text-blue-200">
-              Sign Up to stay updated when it gets released.
-            </p>
           </div>
           
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight font-clash mb-12">
@@ -62,6 +59,10 @@ export const Hero = () => {
           <div className="max-w-2xl mx-auto space-y-12">
             <p className="text-xl md:text-2xl font-medium text-blue-100 leading-relaxed">
               We're working on something amazing to enhance your studying, researching, ideation, and thought process.
+            </p>
+            
+            <p className="text-xl font-clash text-blue-200">
+              Sign Up to stay updated when it gets released.
             </p>
             
             <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
