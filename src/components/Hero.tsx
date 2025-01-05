@@ -68,7 +68,7 @@ export const Hero = () => {
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-white/10 border-white/20 text-white placeholder:text-slate-400 rounded-full pr-14"
+                  className="w-full bg-white/10 border-white/20 text-white placeholder:text-slate-400 rounded-full pr-12"
                   required
                   disabled={isSubmitting}
                 />
@@ -76,9 +76,9 @@ export const Hero = () => {
                   type="submit" 
                   size="icon"
                   disabled={isSubmitting}
-                  className="group absolute right-1 top-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 rounded-full aspect-square p-0 w-10 h-10 flex items-center justify-center"
+                  className="group absolute right-1.5 top-1/2 -translate-y-1/2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-300 rounded-full aspect-square p-0 w-8 h-8 flex items-center justify-center"
                 >
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
             </form>
